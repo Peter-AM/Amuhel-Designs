@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AMUHEL DESIGNS</title>
+<meta name="Keywords" content="design, graphics, web development, branding, portfolio">
+<meta name="Description" content="Portfolio of Peter Abuczki-Muhel">
+<meta name="Viewport" content="width=device-width initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="icon" href="img/logo.png">
+<script src="jquery.js"></script>
+<script>
+
+var images = new Array();
+
+function picLoad(){
+
+    for (i=0; i < picLoad.arguments.length; i++){
+
+         images[i] = new Image();
+
+        images[i].src = picLoad.arguments[i];
+
+    }
+
+}
+
+picLoad("logo.png", "packapunch.png", "arrow.png", "sticker01.png", "barbellpng.png", "lifedeath.jpg", "rose.png");
+
+</script>
+	
+</head>
+
+<body>
+	<header>
+	
+	 <a href="#hero"><div id="logo">
+		
+		 </div></a>
+		
+		
+	 <nav>
+		
+		<a href="#hero">HOME</a>
+		<a href="#section1">WORK</a>
+		<a href="#section4">ABOUT</a>
+		<a href="#section5">CONTACT</a>
+		 
+		 <div id="fb"></div>
+		 <div id="insta"></div>
+		 <div id="twitt"></div>
+		
+	 </nav>
+	
+	</header>
+	
+	<main>
+		
+	    <section id="hero">
+			
+			<h1>AMUHEL DESIGNS</h1>
+			
+			<img src="img/packapunch.png" id="fade" alt="Tagline saying 'Designs that pack a punch'">
+			
+			<div id="arrow"> </div>
+			
+		</section>
+		
+		
+		<section id="section1">
+		
+			<h1>FEATURED WORK</h1>
+			
+			<div id="pic01" alt="A sticker design depicting a cartoon-style geeky character"></div>
+			
+			<h2>BLUE SHREW PRINTS</h2>
+			
+			<h3>merchandise graphic design</h3>
+			
+			
+		</section>
+		
+		
+		<section id="section2">
+			
+			<div id="pic02" alt="Circle-based logo design"></div>
+			
+			<h2>MURKLE BARBELL <br>CLUB</h2>
+			
+			<h3>branding, logo design</h3>
+			
+		</section>
+		
+		
+		<section id="section3">
+			
+			<div id="pic03" alt="Poster design to advertise a linocut print exhibition"></div>
+			
+			<h2>LIFE, DEATH, REPEAT</h2>
+			
+			<h3>printable design, graphic design</h3>
+			
+			<h1 id="roseh2">'ROSE' CHARACTER <br>CONCEPT</h1>
+			<p id="roseh3">visual concept, graphic design</p>
+			
+			<div id="pic04" alt="Character design depicting a cartoon style female character"></div>
+	
+			
+		</section>
+		
+		<section id="section4">
+		
+			<h1>ABOUT</h1>
+			
+			<p> Hello there, my name is Peter Abuczki-Muhel. I am a graphic designer
+			based in the wonderful city of Aberdeen, Scotland. When I’m not knee-
+			deep in a project you can find me taking a walk on the shore with my 
+			lovely wife or playing some tabletop roleplaying game with some fellow
+			nerds.<br>
+				<br>
+
+			I’m passionate about creating well thought out designs with a touch of 
+			simplicity and awesomeness, because ‘design’ shouldn’t be the equivalent 
+			of ‘overwhelming’.</p>
+			
+			<div id="services">
+			
+				<h2>SERVICES</h2>
+				<h3>print design</h3>
+				<h3>brand development</h3>
+				<h3>visual identity</h3>
+				<h3>website design</h3>
+				<h3>merch design</h3>
+			
+			</div>
+			
+			<div id="testimony">
+			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. </p>
+				<h3> - Mr. Smith, Prominent Company</h3>
+			</div>
+		
+		</section>
+		
+		<section id="section5">
+		
+			<h1>LET'S CONNECT</h1>
+			
+				<form>
+			
+					<input type="text" class="small" id="name" name="name" placeholder="NAME">
+					<textarea id="description" name="description" placeholder="PROJECT DESCRIPTION"></textarea>
+					<br>
+					<input type="text" class="small" id="mail" name="mail" placeholder="EMAIL"><br>
+					<input type="text" class="small" id="bname" name="bname" placeholder="BUSINESS NAME"><br>
+					<input type="text" class="small" id="url" name="url" placeholder="URL"><br>
+					<input type="text" class="small" id="budget" name="budget" placeholder="ESTIMATED BUDGET"><br>
+					<input type="text" class="small" id="timeline" name="timeline" placeholder="ESTIMATED TIMELINE"><br>
+				
+				</form>
+			
+				<div id="submit">SUBMIT</div>
+			
+				<p>©2020 AMUHEL DESIGNS - ALL RIGHTS RESERVED</p>
+			
+			<script>
+	
+				$(document).ready(function(){
+  					$("input").focus(function(){
+    			$(this).css("background-color", "#1c1c1c");
+  				});
+  					$("input").blur(function(){
+    			$(this).css("background-color", "#666565");
+  				});
+				});
+	
+			</script>	
+				
+			
+		
+		</section>
+	
+	</main>
+</body>
+</html>
